@@ -12,6 +12,7 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/atitlegothic3"
         android:textColor="@color/purple_700"
+        android:lineSpacingExtra="1.5dp"
         android:text="HPV 백신이란?"
         android:textSize="17dp"
         />
@@ -20,10 +21,10 @@
         android:id="@+id/imgMore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="19dp"
-        android:layout_marginStart="220dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginStart="230dp"
         android:src="@drawable/more_ck" />
 
 </LinearLayout>

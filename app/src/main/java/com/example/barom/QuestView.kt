@@ -14,10 +14,38 @@ class QuestView: AppCompatActivity() {
     lateinit var listView: ListView
     lateinit var btn_add:Button
 
+    //변수 선언
+    lateinit var homeBtn4: Button
+    lateinit var hospitalBtn4:Button
+    lateinit var infoBtn4:Button
+    lateinit var questBtn4:Button
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.quest_listview)
+
+        homeBtn4 = findViewById(R.id.homeBtn4)
+        hospitalBtn4 = findViewById(R.id.hospitalBtn4)
+        infoBtn4 = findViewById(R.id.imfoBtn4)
+        questBtn4 = findViewById(R.id.quest4)
+
+        homeBtn4.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+        hospitalBtn4.setOnClickListener {
+            val intent = Intent(this, MapsActivity::class.java)
+            startActivity(intent)
+        }
+        infoBtn4.setOnClickListener {
+            val intent = Intent(this, InfoActivity::class.java)
+            startActivity(intent)
+        }
+        questBtn4.setOnClickListener {
+            val intent = Intent(this, QuestView::class.java)
+            startActivity(intent)
+        }
 
 
         var questList= arrayListOf<QuestClass>(

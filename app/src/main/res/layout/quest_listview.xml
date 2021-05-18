@@ -51,7 +51,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/homeBtn"
+        android:id="@+id/homeBtn4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
@@ -61,27 +61,27 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/hospitalBtn"
+        android:id="@+id/hospitalBtn4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="16dp"
         android:text="병원"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/homeBtn" />
+        app:layout_constraintStart_toEndOf="@+id/homeBtn4" />
 
     <Button
-        android:id="@+id/imfoBtn"
+        android:id="@+id/imfoBtn4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="16dp"
         android:text="정보"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/hospitalBtn" />
+        app:layout_constraintStart_toEndOf="@+id/hospitalBtn4" />
 
     <Button
-        android:id="@+id/quest"
+        android:id="@+id/quest4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -90,7 +90,7 @@
         android:text="Q&amp;A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imfoBtn" />
+        app:layout_constraintStart_toEndOf="@+id/imfoBtn4" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
