@@ -7,12 +7,48 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="743dp"
+        android:layout_height="377dp"
         android:layout_gravity="top"
         android:src="@drawable/background"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rectangle"
+            android:drawableLeft="@drawable/day1"
+            android:fontFamily="@font/atitlegothic3"
+            android:gravity="center"
+            android:text="다음 접종까지 26일 남았습니다."
+            android:textColor="@color/purple_700"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:background="@drawable/rectangle"
+            android:layout_gravity="bottom|fill_horizontal"
+            android:src="@drawable/image1" />
+
+    </LinearLayout>
+
+
 
     <Button
         android:id="@+id/homeBtn"
