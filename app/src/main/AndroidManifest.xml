@@ -19,6 +19,11 @@
         android:theme="@style/Theme.Barom"
         android:usesCleartextTraffic="true">
         <activity android:name=".InfoActivity"></activity>
+        <activity android:name=".QuestView"></activity>
+        <activity android:name=".QuestItem"></activity>
+        <activity android:name=".QuestAdd"></activity>
+        <activity android:name=".MyClassAdd"></activity>
+
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").

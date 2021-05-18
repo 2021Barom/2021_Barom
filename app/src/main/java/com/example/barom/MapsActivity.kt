@@ -37,8 +37,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback{
     private lateinit var mMap: GoogleMap
     private lateinit var fusedLocationClient:FusedLocationProviderClient
     private lateinit var locationCallback: LocationCallback
-    private lateinit var btnCall1 : Button
-    private lateinit var btnHomepage1 : Button
 
 
     @RequiresApi(Build.VERSION_CODES.M)

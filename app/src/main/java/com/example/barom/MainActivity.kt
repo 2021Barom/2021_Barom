@@ -4,11 +4,18 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
-
     //변수 선언
+    var myclass=MyClass("이름을 등록해주세요", "생년월일을 등록해주세요", "병원을 등록해주세요")
+
+    lateinit var nameTextView: TextView
+    lateinit var birthTextView: TextView
+    lateinit var hospitalTextView: TextView
+    lateinit var addBtn:Button
+
     lateinit var homeBtn: Button
     lateinit var hospitalBtn:Button
     lateinit var infoBtn:Button
@@ -18,10 +25,33 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        nameTextView=findViewById(R.id.nameTextView)
+        birthTextView=findViewById(R.id.birthTextView)
+        hospitalTextView=findViewById(R.id.hospitalTextView)
+        addBtn=findViewById(R.id.addBtn)
+
         homeBtn = findViewById(R.id.homeBtn)
         hospitalBtn = findViewById(R.id.hospitalBtn)
         infoBtn = findViewById(R.id.infoBtn)
         questBtn = findViewById(R.id.questBtn)
+
+        if (intent.hasExtra("name")){
+            myclass= MyClass(intent.getStringExtra("name").toString(),
+                intent.getStringExtra("birth").toString(),
+                intent.getStringExtra("hospital").toString(),)
+        }
+
+        //사용자 정보 등록
+        addBtn.setOnClickListener {
+            var intent= Intent(this, MyClassAdd::class.java)
+            startActivity(intent)
+        }
+
+        //사용자 정보 출력
+        nameTextView.text=myclass.name
+        birthTextView.text=myclass.birth
+        hospitalTextView.text=myclass.hospitbal
+
 
         homeBtn.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
