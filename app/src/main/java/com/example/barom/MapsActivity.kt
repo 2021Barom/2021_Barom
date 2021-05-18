@@ -38,7 +38,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback{
     private lateinit var fusedLocationClient:FusedLocationProviderClient
     private lateinit var locationCallback: LocationCallback
 
-
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -95,7 +94,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback{
     }
 
     fun setLastLocation(lastLocation: Location){
-        val LatLNG = LatLng(lastLocation.latitude, lastLocation.longitude)
+        val LatLNG = LatLng(37.5031613536263, 126.85532489634838)
         val markerOptions = MarkerOptions()
                 .position(LatLNG)
                 .title("내 위치")
@@ -186,7 +185,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback{
                         granted_all = false
                         break
                     }
-
                 }
                 if (granted_all){
                     startProcess()
