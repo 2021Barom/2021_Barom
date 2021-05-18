@@ -32,7 +32,7 @@ import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
-class MapsActivity : AppCompatActivity(), OnMapReadyCallback, BottomNavigationView.OnNavigationItemSelectedListener{
+class MapsActivity : AppCompatActivity(), OnMapReadyCallback{
 
     private lateinit var mMap: GoogleMap
     private lateinit var fusedLocationClient:FusedLocationProviderClient

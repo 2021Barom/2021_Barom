@@ -35,7 +35,7 @@
         app:layout_constraintStart_toEndOf="@+id/homeBtn" />
 
     <Button
-        android:id="@+id/imfoBtn"
+        android:id="@+id/infoBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -45,7 +45,7 @@
         app:layout_constraintStart_toEndOf="@+id/hospitalBtn" />
 
     <Button
-        android:id="@+id/quest"
+        android:id="@+id/questBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
