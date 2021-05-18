@@ -20,6 +20,6 @@
     <item
         android:id="@+id/postItem"
         android:icon="@drawable/chat_ck"
-        android:title="게시판" />
+        android:title="자주묻는질문" />
 
 </menu>

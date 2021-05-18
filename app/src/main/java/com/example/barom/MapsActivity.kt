@@ -199,24 +199,4 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, BottomNavigationVi
         }
     }
 
-    override fun onNavigationItemSelected(item:MenuItem): Boolean {
-
-        when(item.itemId) {
-            R.id.homeItem-> {
-                //supportFragmentManager.beginTransaction().replace(R.id.linearLayout , HomeFragment()).commitAllowingStateLoss()
-                return true
-            }
-            R.id.informationItem -> {
-                //supportFragmentManager.beginTransaction().replace(R.id.linearLayout, TVFragment()).commitAllowingStateLoss()
-                return true
-            }
-            R.id.postItem -> {
-                //supportFragmentManager.beginTransaction().replace(R.id.linearLayout, CalendarFragment()).commitAllowingStateLoss()
-                return true
-            }
-        }
-
-        return false
-    }
-
 }
