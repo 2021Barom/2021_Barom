@@ -17,16 +17,14 @@ public class InfoActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
-        /*
-        Button info_homeBtn = (Button) findViewById(R.id.info_homeBtn);
-        Button info_hospitalBtn = (Button)findViewById(R.id.info_hospitalBtn);
-        Button info_imfoBtn = (Button)findViewById(R.id.info_imfoBtn);
-        Button info_questBtn = (Button)findViewById(R.id.info_questBtn);
 
-         */
+        Button info_homeBtn = (Button) findViewById(R.id.homeBtn3);
+        Button info_hospitalBtn = (Button)findViewById(R.id.hospitalBtn3);
+        Button info_imfoBtn = (Button)findViewById(R.id.imfoBtn3);
+        Button info_questBtn = (Button)findViewById(R.id.quest3);
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_info);
+        setContentView(R.layout.activity_info2);
         Display newDisplay = getWindowManager().getDefaultDisplay();
         int width = newDisplay.getWidth();
 
@@ -47,36 +45,34 @@ public class InfoActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
 
 
-        /*
+
         info_homeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-                startActivityForResult(intent, 1001);
+                startActivity(intent);
             }
         });
         info_hospitalBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),MapsActivity.class);
-                startActivityForResult(intent, 1001);
+                startActivity(intent);
             }
         });
         info_imfoBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),InfoActivity.class);
-                startActivityForResult(intent, 1001);
+                startActivity(intent);
             }
         });
         info_questBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),QuestView.class);
-                startActivityForResult(intent, 1001);
+                startActivity(intent);
             }
         });
-
-         */
     }
 }

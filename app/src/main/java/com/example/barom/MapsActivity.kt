@@ -38,11 +38,38 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback{
     private lateinit var fusedLocationClient:FusedLocationProviderClient
     private lateinit var locationCallback: LocationCallback
 
+    lateinit var homeBtn: Button
+    lateinit var hospitalBtn:Button
+    lateinit var infoBtn:Button
+    lateinit var questBtn:Button
+
 
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         checkPermission()
+
+        homeBtn = findViewById(R.id.map_homeBtn)
+        hospitalBtn = findViewById(R.id.map_hospitalBtn)
+        infoBtn = findViewById(R.id.map_imfoBtn)
+        questBtn = findViewById(R.id.map_questBtn)
+
+        homeBtn.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+        hospitalBtn.setOnClickListener {
+            val intent = Intent(this, MapsActivity::class.java)
+            startActivity(intent)
+        }
+        infoBtn.setOnClickListener {
+            val intent = Intent(this, InfoActivity1::class.java)
+            startActivity(intent)
+        }
+        questBtn.setOnClickListener {
+            val intent = Intent(this, QuestView::class.java)
+            startActivity(intent)
+        }
     }
 
     fun startProcess(){

@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         infoBtn.setOnClickListener {
-            val intent = Intent(this, InfoActivity::class.java)
+            val intent = Intent(this, InfoActivity1::class.java)
             startActivity(intent)
         }
         questBtn.setOnClickListener {
