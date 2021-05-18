@@ -31,7 +31,7 @@
             android:gravity="center"
             android:text="다음 접종까지 26일 남았습니다."
             android:textColor="@color/purple_700"
-            android:textSize="20dp" />
+            android:textSize="13dp" />
 
     </LinearLayout>
 
@@ -41,7 +41,7 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="450dp"
+            android:layout_height="250dp"
             android:background="@drawable/rectangle"
             android:layout_gravity="bottom|fill_horizontal"
             android:src="@drawable/image1" />
@@ -90,5 +90,5 @@
         android:text="Q&amp;A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imfoBtn" />
+        app:layout_constraintStart_toEndOf="@+id/infoBtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
