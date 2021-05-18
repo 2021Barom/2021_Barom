@@ -34,13 +34,13 @@
         android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/atitlegothic2"
         android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
         sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
         sed diam voluptua...."
         android:textColor="@color/textColor"
         android:textSize="12dp"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintStart_toStartOf="@+id/view" />
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/textTitleView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,11 +14,9 @@ class QuestView: AppCompatActivity() {
     lateinit var listView: ListView
     lateinit var btn_add:Button
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.quest_listview)
-
 
         var questList= arrayListOf<QuestClass>(
             QuestClass("제목입니다",
