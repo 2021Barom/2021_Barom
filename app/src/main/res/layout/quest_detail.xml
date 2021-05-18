@@ -5,16 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:src="@drawable/background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/title_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="38dp"
         android:fontFamily="@font/atitlegothic3"
         android:text="Lorem ipsum dolor sit amet"
-        android:textColor="@color/purple_700"
-        android:textSize="17dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/detail_detail"
         app:layout_constraintTop_toTopOf="parent" />
 
