@@ -25,10 +25,10 @@ class QuestView: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.quest_listview)
 
-        homeBtn4 = findViewById(R.id.homeBtn4)
+        homeBtn4 = findViewById(R.id.infoBtn4)
         hospitalBtn4 = findViewById(R.id.hospitalBtn4)
-        infoBtn4 = findViewById(R.id.imfoBtn4)
-        questBtn4 = findViewById(R.id.quest4)
+        infoBtn4 = findViewById(R.id.infoBtn4)
+        questBtn4 = findViewById(R.id.questBtn4)
 
         homeBtn4.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)

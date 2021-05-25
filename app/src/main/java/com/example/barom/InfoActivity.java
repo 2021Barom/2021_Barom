@@ -18,10 +18,10 @@ public class InfoActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
 
 
-        Button info_homeBtn = (Button) findViewById(R.id.homeBtn3);
-        Button info_hospitalBtn = (Button)findViewById(R.id.hospitalBtn3);
-        Button info_imfoBtn = (Button)findViewById(R.id.imfoBtn3);
-        Button info_questBtn = (Button)findViewById(R.id.quest3);
+        Button info_homeBtn = (Button) findViewById(R.id.homeBtn4);
+        Button info_hospitalBtn = (Button)findViewById(R.id.hospitalBtn4);
+        Button info_imfoBtn = (Button)findViewById(R.id.infoBtn4);
+        Button info_questBtn = (Button)findViewById(R.id.questBtn4);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info2);

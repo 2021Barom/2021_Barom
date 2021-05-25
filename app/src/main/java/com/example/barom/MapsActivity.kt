@@ -49,10 +49,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback{
         super.onCreate(savedInstanceState)
         checkPermission()
 
-        homeBtn = findViewById(R.id.map_homeBtn)
-        hospitalBtn = findViewById(R.id.map_hospitalBtn)
-        infoBtn = findViewById(R.id.map_imfoBtn)
-        questBtn = findViewById(R.id.map_questBtn)
+        homeBtn = findViewById(R.id.homeBtn4)
+        hospitalBtn = findViewById(R.id.hospitalBtn4)
+        infoBtn = findViewById(R.id.infoBtn4)
+        questBtn = findViewById(R.id.questBtn4)
 
         homeBtn.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)

@@ -25,10 +25,10 @@ class InfoActivity1 : AppCompatActivity() {
         val newDisplay = windowManager.defaultDisplay
         val width = newDisplay.width
 
-        homeBtn3 = findViewById(R.id.homeBtn3)
-        hospitalBtn3 = findViewById(R.id.hospitalBtn3)
-        imfoBtn3 = findViewById(R.id.imfoBtn3)
-        quest3 = findViewById(R.id.quest3)
+        homeBtn3 = findViewById(R.id.homeBtn4)
+        hospitalBtn3 = findViewById(R.id.hospitalBtn4)
+        imfoBtn3 = findViewById(R.id.infoBtn4)
+        quest3 = findViewById(R.id.questBtn4)
 
         homeBtn3.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)

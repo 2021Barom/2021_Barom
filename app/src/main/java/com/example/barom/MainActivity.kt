@@ -2,7 +2,6 @@ package com.example.barom
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -30,10 +29,10 @@ class MainActivity : AppCompatActivity() {
         hospitalTextView=findViewById(R.id.hospitalTextView)
         addBtn=findViewById(R.id.addBtn)
 
-        homeBtn = findViewById(R.id.homeBtn)
-        hospitalBtn = findViewById(R.id.hospitalBtn)
-        infoBtn = findViewById(R.id.infoBtn)
-        questBtn = findViewById(R.id.questBtn)
+        homeBtn = findViewById(R.id.homeBtn4)
+        hospitalBtn = findViewById(R.id.hospitalBtn4)
+        infoBtn = findViewById(R.id.infoBtn4)
+        questBtn = findViewById(R.id.questBtn4)
 
         if (intent.hasExtra("name")){
             myclass= MyClass(intent.getStringExtra("name").toString(),
