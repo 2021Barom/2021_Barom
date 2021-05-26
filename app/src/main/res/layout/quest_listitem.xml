@@ -7,8 +7,8 @@
 
     <View
         android:id="@+id/view"
-        android:layout_width="382dp"
-        android:layout_height="114dp"
+        android:layout_width="390dp"
+        android:layout_height="134dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/rectangle"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,8 +18,8 @@
 
     <TextView
         android:id="@+id/textTitleView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="344dp"
+        android:layout_height="39dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/atitlegothic3"
@@ -31,8 +31,8 @@
 
     <TextView
         android:id="@+id/contentTextView"
-        android:layout_width="340dp"
-        android:layout_height="wrap_content"
+        android:layout_width="357dp"
+        android:layout_height="37dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/atitlegothic2"
